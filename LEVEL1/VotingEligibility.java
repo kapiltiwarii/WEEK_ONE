@@ -1,23 +1,23 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class VotingEligibility {
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-   
-        System.out.print("Enter the person's age: ");
-        int age = scanner.nextInt();
-
-        
-        if (age >= 18) {
-          
-            System.out.println("The person's age is " + age + " and can vote.");
-        } else {
-        
-            System.out.println("The person's age is " + age + " and cannot vote.");
-        }
-
-
-    }
-}
+public class VotingEligibility{
+public static void main(String []args){
+     Scanner input = new Scanner(System.in);
+     int n=10;
+     int StudentAge[]=new int[n];
+     
+      
+     for(int i=0; i<n; i++){
+            StudentAge[i]=input.nextInt();
+       }
+     
+      for(int i=0; i<n; i++){
+           if(StudentAge[i]>=18){
+            System.out.println("The student with the Age "+ StudentAge[i] + " can vote ");
+         }
+         else{
+          System.out.println("The student with the Age "+ StudentAge[i] + " cannot vote ");
+           }
+       }  
+    
+}}
